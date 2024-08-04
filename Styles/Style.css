@@ -1,0 +1,20 @@
+@import url("./Mobile.css");
+@import url("./Tablet.css") only screen and (min-width: 678px);
+@import url("./Desktop.css") only screen and (min-width: 1024px);
+@font-face {
+    font-family:outfit;
+    src: url("../public/Font/Outfit-VariableFont_wght.ttf");
+}
+:root{
+    --fontfam:outfit;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
