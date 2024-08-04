@@ -7,8 +7,9 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+  width: 100%;
+background-color: #2b2b2b;
   .header-logo {
-    background-color: red;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -17,9 +18,13 @@
     width: 100%;
     gap: 10px;
     font-size: 12px;
+    padding: 18px;
+    color: whitesmoke;
+    font-size: 20px;
     img {
       border-radius: 50%;
       width: 50px;
+      display: none;
     }
   }
   .header-nav {
@@ -28,8 +33,6 @@
     width: 30%;
     display: flex;
     nav {
- 
-      background-color: green;
       display: none !important;
       flex-flow: row wrap;
       justify-content: center;
@@ -40,26 +43,65 @@
       text-transform: capitalize;
       font-size: 24px;
     }
-    
+
     div {
       &:hover a {
         border-bottom: 1px solid whitesmoke;
       }
     }
   }
-  .header-stats{
+  .header-stats {
     right: 10px;
     position: absolute;
-    .button{
+    .button {
       display: none;
       padding: 10px;
       border: 1px solid black;
       width: 70%;
     }
-    .stats_search{
-      input[type="text"]{
+    .stats_search {
+      input[type="text"] {
         display: none;
       }
+    }
+  }
+}
+
+.header-nav {
+  left: 10px;
+  position: absolute;
+  width: 30%;
+  display: flex;
+  nav {
+    display: none !important;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: max-content;
+    gap: 30px;
+    text-transform: capitalize;
+    font-size: 24px;
+  }
+
+  div {
+    &:hover a {
+      border-bottom: 1px solid whitesmoke;
+    }
+  }
+}
+.header-stats {
+  right: 10px;
+  position: absolute;
+  .button {
+    display: none;
+    padding: 10px;
+    border: 1px solid black;
+    width: 70%;
+  }
+  .stats_search {
+    input[type="text"] {
+      display: none;
     }
   }
 }
