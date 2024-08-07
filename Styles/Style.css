@@ -1,6 +1,6 @@
 @import url("./Mobile.css");
-@import url("./Tablet.css") only screen and (min-width: 678px);
-@import url("./Desktop.css") only screen and (min-width: 1024px);
+@import url("./Tablet.css") only screen and (min-width: 768px);
+@import url("./Desktop.css") only screen and (min-width: 1200px);
 @font-face {
     font-family:outfit;
     src: url("../public/Font/Outfit-VariableFont_wght.ttf");

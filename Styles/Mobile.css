@@ -10,6 +10,7 @@
   width: 100%;
 background-color: #2b2b2b;
   .header-logo {
+    
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -43,7 +44,9 @@ background-color: #2b2b2b;
       text-transform: capitalize;
       font-size: 24px;
     }
-
+svg{
+  cursor: pointer;
+}
     div {
       &:hover a {
         border-bottom: 1px solid whitesmoke;
@@ -94,10 +97,14 @@ background-color: #2b2b2b;
   right: 10px;
   position: absolute;
   .button {
+    cursor: pointer;
     display: none;
     padding: 10px;
     border: 1px solid black;
     width: 70%;
+  }
+  svg{
+    cursor: pointer;
   }
   .stats_search {
     input[type="text"] {
