@@ -55,17 +55,17 @@
     position: relative;
     width: 20%;
     display: flex;
-    padding-left:10px ;
+    padding-left: 10px;
     justify-content: center;
     align-items: center;
     gap: 20px;
     .button {
-      display:none;
+      display: none;
       border-radius: 15px;
       padding: 15px;
       justify-content: center;
       align-items: center;
-   flex-flow: row wrap;
+      flex-flow: row wrap;
       color: whitesmoke;
       border: 2px solid rgb(255, 255, 255);
       width: 130px;

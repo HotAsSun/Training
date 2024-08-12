@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Styles/Style.css" />
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+
     <title>Library | cna</title>
   </head>
   <body>
@@ -117,6 +119,68 @@
           </div>
         </div>
       </div>
+      <div class="intro">
+        <div class="intro_top">
+          <div class="intro_about">
+            <div class="intro_about_image">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="./public/Images/40 best books to read before you die.jpeg"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./public/Images/40 best books to read before you die.jpeg"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./public/Images/40 best books to read before you die.jpeg"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./public/Images/40 best books to read before you die.jpeg"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="intro_about_text">
+              <h1>Dont let knowladge pass by use it instead</h1>
+              <p>
+                with BooKclub you can find books for every jonra and for every
+                age possible
+              </p>
+            </div>
+            <div class="intro_about_more">
+              <button>learn more</button>
+              <button>book section</button>
+            </div>
+          </div>
+          <div class="intro_swiper"></div>
+        </div>
+      </div>
     </div>
+
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop : true ,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>
